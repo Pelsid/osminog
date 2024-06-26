@@ -4990,16 +4990,17 @@ body {
 
 @media (max-width: 1920px) {
   .footer__modal {
-    height: 100vh;
-    top: 0;
+    height: calc(100vh - 112px);
+    top: 110px;
     padding-top: 200px;
     overflow-y: auto;
-    height: 100%;
+    box-shadow: unset;
+    scrollbar-width: none;
   }
 
   .footer__modal-close {
     position: absolute;
-    top: 130px;
+    top: 30px;
     right: 110px;
     cursor: pointer;
   }
