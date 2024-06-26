@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Osminog</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="header__content">
+                <div class="header__attention">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="/">
+                            <p class="header__logo-paragraph">OSMINOG</p>
+                            <p class="header__logo-paragraph">PROJECT</p>
+                        </a>
+                    </div>
+
+                    <div onclick="showMenu()" class="header__mobile-button mobile-button">
+                        <div class="mobile-button__item"></div>
+                        <div class="mobile-button__item"></div>
+                        <div class="mobile-button__item"></div>
+                    </div>
+                </div>
+
+                <div class="header__storage">
+
+                    <ul class="header__list">
+                        <li class="header__list-item ">
+                            <div class="header__list-image"><img class="header__list-img" src="./img/long-arrow.svg"
+                                    alt="">
+                            </div><a class="header__list-link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="header__list-item">
+                            <div class="header__list-image"><img class="header__list-img" src="./img/long-arrow.svg"
+                                    alt="">
+                            </div><a class="header__list-link" href="./servise.html">Услуги</a>
+                        </li>
+                        <li class="header__list-item">
+                            <div class="header__list-image"><img class="header__list-img" src="./img/long-arrow.svg"
+                                    alt="">
+                            </div><a class="header__list-link" href="./cases.html">Кейсы</a>
+                        </li>
+                        <li class="header__list-item">
+                            <div class="header__list-image"><img class="header__list-img" src="./img/long-arrow.svg"
+                                    alt="">
+                            </div><a class="header__list-link" href="">Команда</a>
+                        </li>
+                        <li class="header__list-item header__list-item_select header__list-item_merch">
+                            <div class="header__list-image"><img class="header__list-img" src="./img/long-arrow.svg"
+                                    alt="">
+                            </div><a class="header__list-link" href="./merch.html">Мерч</a>
+                        </li>
+                        <li class="header__list-item header__list-item_mobile"
+                            onclick="openModal('footer__modal', 'footer__modal--active'), closeModal('header', 'header_show', 'overflow')">
+                            <div class="header__list-image"><img class="header__list-img" src="./img/long-arrow.svg"
+                                    alt="">
+                            </div>
+                            <div class="header__list-link">Контакты</div>
+                        </li>
+                    </ul>
+                    <div class="header__storage-bottom">
+                        <div class="header__storage-back">
+                            <div class="header__storage-image">
+                                <img class="header__storage-img" src="./img/arrow.svg" alt="">
+                            </div>
+                            <span class="header__storage-span">Назад</span>
+                        </div>
+                        <a class="header__storage-cooperation" href="">сотрудничество</a>
+                    </div>
+
+                </div>
+
+                <div class="header__side">
+                    <a class="header__side-number" href="tel:+ 7 (999) 999 -99-99">+ 7 (999) 999 -99-99</a>
+
+                    <div class="header__side-links">
+                        <div class="header__side-contacts"
+                            onclick="openModal('footer__modal', 'footer__modal--active')">контакты</div>
+                        <a class="header__side-cooperation" href="">сотрудничество</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="merch">
+
+        <div class="container">
+            <h1 class="merch__title">
+                Коллекция
+                <div class="merch__title-image">
+                    <img class="merch__title-img" src="./img/merch/title.png" alt="">
+                </div>
+                <span class="merch__title-border">OSMINOG</span> <span class="merch__title-yellow">WEAR</span>
+            </h1>
+
+            <section class="merch__category-container">
+
+                <div class="merch__category">
+                    <p class="merch__category-title">Удобная одежда от IT {<span>айти</span>} комьюнити</p>
+                    <p class="merch__category-paragraph">Мы создавали эту линейку одежды для себя. Поэтому
+                        сфокусировались
+                        на
+                        главном: <span class="merch__category-paragraph-yellow">комфорт, стиль, качество.</span>
+                        Футболки,
+                        свитшоты, худи дарили сотрудникам за успехи в работе,
+                        сейчас нашу одежду может купить любой желающий.
+                    </p>
+                    <p class="merch__category-paragraph"><span class="merch__category-paragraph-border">Наша
+                            коллекция</span> — это
+                        не просто одежда, это символ принадлежности к
+                        сообществу талантливых
+                        и целеустремленных людей. </p>
+                </div>
+
+                <div class="merch__category-wrap">
+                    <div class="merch__category-links">
+
+                        <a class="merch__category-link" href="">
+                            <div class="merch__category-link-image">
+                                <img class="merch__category-link-img" src="./img/merch/category-1.png" alt="">
+                            </div>
+                            <div class="merch__category-link-name">
+                                Женская
+                            </div>
+                        </a>
+
+                        <a class="merch__category-link" href="">
+                            <div class="merch__category-link-image">
+                                <img class="merch__category-link-img" src="./img/merch/category-2.png" alt="">
+                            </div>
+                            <div class="merch__category-link-name">
+                                Мужская
+                            </div>
+                        </a>
+
+                        <a class="merch__category-link" href="">
+                            <div class="merch__category-link-image">
+                                <img class="merch__category-link-img" src="./img/merch/category-3.png" alt="">
+                            </div>
+                            <div class="merch__category-link-name">
+                                Унисекс
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="merch__catalog">
+                <h2 class="merch__catalog-title">специально для вас!</h2>
+                <div class="merch__catalog-container">
+
+                    <div class="merch__catalog-item" onclick="openModal('merch__modal', 'merch__modal--active')">
+                        <div class="merch__catalog-item-image">
+                            <img class="merch__catalog-item-img" src="./img/merch/type.png" alt="">
+                        </div>
+                        <p class="merch__catalog-item-stat">NEW</p>
+                        <p class="merch__catalog-item-price">3000 р</p>
+                        <p class="merch__catalog-item-type">Худи</p>
+                    </div>
+
+                    <div class="merch__catalog-item" onclick="openModal('merch__modal', 'merch__modal--active')">
+                        <div class="merch__catalog-item-image">
+                            <img class="merch__catalog-item-img" src="./img/merch/type.png" alt="">
+                        </div>
+                        <p class="merch__catalog-item-stat">NEW</p>
+                        <p class="merch__catalog-item-price">3000 р</p>
+                        <p class="merch__catalog-item-type">Худи</p>
+                    </div>
+
+                    <div class="merch__catalog-item" onclick="openModal('merch__modal', 'merch__modal--active')">
+                        <div class="merch__catalog-item-image">
+                            <img class="merch__catalog-item-img" src="./img/merch/type.png" alt="">
+                        </div>
+                        <p class="merch__catalog-item-stat">NEW</p>
+                        <p class="merch__catalog-item-price">3000 р</p>
+                        <p class="merch__catalog-item-type">Худи</p>
+                    </div>
+
+                    <div class="merch__catalog-item" onclick="openModal('merch__modal', 'merch__modal--active')">
+                        <div class="merch__catalog-item-image">
+                            <img class="merch__catalog-item-img" src="./img/merch/type.png" alt="">
+                        </div>
+                        <p class="merch__catalog-item-stat">NEW</p>
+                        <p class="merch__catalog-item-price">3000 р</p>
+                        <p class="merch__catalog-item-type">Худи</p>
+                    </div>
+
+                    <div class="merch__catalog-item" onclick="openModal('merch__modal', 'merch__modal--active')">
+                        <div class="merch__catalog-item-image">
+                            <img class="merch__catalog-item-img" src="./img/merch/type.png" alt="">
+                        </div>
+                        <p class="merch__catalog-item-stat">NEW</p>
+                        <p class="merch__catalog-item-price">3000 р</p>
+                        <p class="merch__catalog-item-type">Худи</p>
+                    </div>
+
+                    <div class="merch__catalog-item" onclick="openModal('merch__modal', 'merch__modal--active')">
+                        <div class="merch__catalog-item-image">
+                            <img class="merch__catalog-item-img" src="./img/merch/type.png" alt="">
+                        </div>
+                        <p class="merch__catalog-item-stat">NEW</p>
+                        <p class="merch__catalog-item-price">3000 р</p>
+                        <p class="merch__catalog-item-type">Худи</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="merch__modal">
+                <div class="merch__modal-close" onclick="closeModal('merch__modal', 'merch__modal--active')">
+                    <div class="merch__modal-cross">
+                        <img class="merch__modal-cross" src="./img/cross.png" alt="">
+                    </div>
+                    <div class="merch__modal-arrow">
+                        <img class="merch__modal-arrow" src="./img/arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="merch__modal-left merch-left">
+                    <h3 class="merch__modal-title">Oversize футболка в удлиненном крое</h3>
+
+                    <div class="merch-left__swiper">
+                        <div class="swiper-container merch-left__top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/merch/category-1.png" alt="Image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/merch/category-2.png" alt="Image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/merch/category-3.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container merch-left__thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/merch/category-1.png" alt="Image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/merch/category-2.png" alt="Image">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/merch/category-3.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="merch-left__pagination"></div>
+                    </div>
+                </div>
+                <div class="merch__modal-rgiht merch-rgiht">
+                    <div class="merch-rgiht__price">3000 р</div>
+                    <div class="merch-rgiht__sizes">
+                        <p class="merch-rgiht__sizes-text">Выбрать размер</p>
+                        <div class="merch-rgiht__sizes-items">
+                            <div class="merch-rgiht__sizes-item">XS</div>
+                            <div class="merch-rgiht__sizes-item">S</div>
+                            <div class="merch-rgiht__sizes-item">M</div>
+                            <div class="merch-rgiht__sizes-item">L</div>
+                            <div class="merch-rgiht__sizes-item">XL</div>
+                        </div>
+                    </div>
+                    <p class="merch-rgiht__description-title">Описание продукта</p>
+                    <div class="merch-rgiht__description-content">
+                        <p class="merch-rgiht__description-text">Плотная ткань</p>
+                        <p class="merch-rgiht__description-text">Состав: 100% Хлопок</p>
+                        <p class="merch-rgiht__description-text">Унисекс</p>
+                    </div>
+                    <div class="merch-rgiht__form-wrap">
+                        <form class="merch-rgiht__form" action="">
+                            <div class="merch-rgiht__form-inputs merch-inputs">
+                                <div class="merch-inputs__item">
+                                    <input class="merch-inputs__input" placeholder="Как к вам обращаться?" type="text">
+                                    <div class="merch-inputs__image">
+                                        <img class="merch-inputs__img" src="./img/blck-human.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="merch-inputs__item">
+                                    <input class="merch-inputs__input" placeholder="На какой номер перезвонить?"
+                                        type="text">
+                                    <div class="merch-inputs__imgae">
+                                        <img class="merch-inputs__img" src="./img/black-phone.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="merch-rgiht__form-buttons">
+                                <div class="merch-rgiht__form-buttons-item">
+                                    <div class="merch-rgiht__form-minus">-</div>
+                                    <input class="merch-rgiht__form-buttons-number" value="1" type="number" id="count"
+                                        name="count" min="1" max="100">
+                                    <div class="merch-rgiht__form-plus">+</div>
+                                </div>
+                                <div class="merch-rgiht__form-buttons-item">
+                                    <input class="merch-rgiht__form-buttons-submit" type="submit" value="заказать">
+                                </div>
+                            </div>
+                            <input id="size" value="" style="display: none;" type="text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title">Оставьте заявку</h2>
+            <div class="footer__content">
+                <div class="footer__left">
+                    <div class="footer__left-top">
+                        <div class="footer__left-paragraph">
+                            Мы перезвоним Вам через
+                            <span class="footer__left-span">15 минут</span>
+                            <div class="footer__left-image">
+                                <img class="footer__left-img" src="./img/time-mini.png" alt="">
+                            </div>
+                        </div>
+                        <p class="footer__left-paragraph">
+                            и обсудим проект
+                        </p>
+                    </div>
+                    <div class="footer__left-medium">
+                        <p class="footer__left-medium-paragraph">Связь с нами</p>
+                        <div class="footer__left-medium-links">
+                            <a class="footer__left-medium-link" href="">+7 (495) 798 78-90</a>
+                            <a class="footer__left-medium-link" href="">info@osminog.biz</a>
+                        </div>
+                    </div>
+                    <div class="footer__left-bottom">
+                        <p class="footer__left-bottom-paragraph">©️ 2024 Osminog Project - All rights reserved</p>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__right-socials right-socials">
+                        <p class="right-socials__text">Подпишись</p>
+                        <div class="right-socials__icons">
+                            <a href="" class="right-socials__image">
+                                <img class="right-socials__img" src="./img/instagram.svg" alt="">
+                            </a>
+                            <a href="" class="right-socials__image">
+                                <img class="right-socials__img" src="./img/telegram.svg" alt="">
+                            </a>
+                            <a href="" class="right-socials__image">
+                                <img class="right-socials__img" src="./img/vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__feedback-form feedback-form">
+                        <form class="feedback-form__form" action="">
+                            <div class="feedback-form__input-wrap">
+                                <input class="feedback-form__input" placeholder="Как к вам обращаться?" type="text">
+                                <div class="feedback-form__icon">
+                                    <img class="feedback-form__icon-img" src="./img/blck-human.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                                <input class="feedback-form__input" placeholder="На какой номер перезвонить?"
+                                    type="text">
+                                <div class="feedback-form__icon">
+                                    <img class="feedback-form__icon-img" src="./img/black-phone.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="feedback-form__submit-wrap">
+                                <input class="feedback-form__submit" type="submit" value="Начнем сотрудничество" />
+                            </div>
+                        </form>
+                        <p class="feedback-form__paragraph">Оставляя заявку, вы соглашаетесь
+                            с <a class="feedback-form__link" href="">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__paragraph">©️ 2024 Osminog Project - All rights reserved</p>
+        </div>
+        <div class="footer__modal">
+
+            <div class="footer__modal-close" onclick="closeModal('footer__modal', 'footer__modal--active')">
+                <div class="footer__modal-cross">
+                    <img class="footer__modal-close-img" src="./img/cross.png" alt="">
+                </div>
+                <div class="footer__modal-arrow">
+                    <img class="footer__modal-close-img" src="./img/arrow.svg" alt="">
+                </div>
+            </div>
+
+            <div class="footer__modal-container">
+                <h2 class="footer__title">Оставьте заявку</h2>
+                <div class="footer__content">
+                    <div class="footer__left">
+                        <div class="footer__left-top">
+                            <div class="footer__left-paragraph">
+                                Мы перезвоним Вам через
+                                <span class="footer__left-span">15 минут</span>
+                                <div class="footer__left-image">
+                                    <img class="footer__left-img" src="./img/time-mini.png" alt="">
+                                </div>
+                            </div>
+                            <p class="footer__left-paragraph">
+                                и обсудим проект
+                            </p>
+                        </div>
+                        <div class="footer__left-medium">
+                            <p class="footer__left-medium-paragraph">Связь с нами</p>
+                            <div class="footer__left-medium-links">
+                                <a class="footer__left-medium-link" href="">+7 (495) 798 78-90</a>
+                                <a class="footer__left-medium-link" href="">info@osminog.biz</a>
+                            </div>
+                        </div>
+                        <div class="footer__left-bottom">
+                            <p class="footer__left-bottom-paragraph">©️ 2024 Osminog Project - All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__right-socials right-socials">
+                            <p class="right-socials__text">Подпишись</p>
+                            <div class="right-socials__icons">
+                                <a href="" class="right-socials__image">
+                                    <img class="right-socials__img" src="./img/instagram.svg" alt="">
+                                </a>
+                                <a href="" class="right-socials__image">
+                                    <img class="right-socials__img" src="./img/telegram.svg" alt="">
+                                </a>
+                                <a href="" class="right-socials__image">
+                                    <img class="right-socials__img" src="./img/vk.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer__feedback-form feedback-form">
+                            <form class="feedback-form__form" action="">
+                                <div class="feedback-form__input-wrap">
+                                    <input class="feedback-form__input" placeholder="Как к вам обращаться?" type="text">
+                                    <div class="feedback-form__icon">
+                                        <img class="feedback-form__icon-img" src="./img/blck-human.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="feedback-form__input-wrap">
+                                    <input class="feedback-form__input" placeholder="На какой номер перезвонить?"
+                                        type="text">
+                                    <div class="feedback-form__icon">
+                                        <img class="feedback-form__icon-img" src="./img/black-phone.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="feedback-form__submit-wrap">
+                                    <input class="feedback-form__submit" type="submit" value="Начнем сотрудничество" />
+                                </div>
+                            </form>
+                            <p class="feedback-form__paragraph">Оставляя заявку, вы соглашаетесь
+                                с <a class="feedback-form__link" href="">Политикой конфиденциальности</a></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__paragraph">©️ 2024 Osminog Project - All rights reserved</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./scipt.js"></script>
+    <script src="./merch-slider.js"></script>
+</body>
+
+</html>
